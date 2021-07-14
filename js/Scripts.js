@@ -25,8 +25,8 @@ function newItem(){
         });
 
         // adding the delete button "X"
-        let deleteButton = $('<crossOutButton></crossOutButton>');
-        deleteButton.append(document.createTextNode('X'));
+        let deleteButton = $('<crossOutButton></crossOutButton>'); // thanks to HTML5 we can invent new custom html tags
+        deleteButton.append(document.createTextNode('X')); // a text node is NOT the same as <p> or any other html tag
         li.append(deleteButton);
         deleteButton.on("click", function(){
             li.fadeOut(1000);
